@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ReadmeCraft - Generate beautiful README.md files for your GitHub projects in seconds." />
+  <title>ReadmeCraft — Beautiful README Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">⚒</span>
+        <span>Readme<strong>Craft</strong></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#generator">Generator</a>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#generator" class="btn btn-primary btn-sm">Start building</a>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">✨ Free • No sign-up required</span>
+        <h1>Craft <span class="grad-text">stunning READMEs</span> for your projects in seconds.</h1>
+        <p class="lead">
+          Stop wrestling with markdown. Fill in a few fields, pick the sections you want, and export a polished README.md ready to drop into your repo.
+        </p>
+        <div class="hero-cta">
+          <a href="#generator" class="btn btn-primary">🚀 Generate README</a>
+          <a href="#features" class="btn btn-ghost">See features →</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>20+</strong><span>READMEs created</span></div>
+          <div><strong>30+</strong><span>Badge integrations</span></div>
+          <div><strong>100%</strong><span>Client-side</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">README.md</span>
+          </div>
+<pre class="code-content"><span class="md-h1"># 🚀 MyAwesomeProject</span>
+
+<span class="md-text">A blazing-fast tool that helps developers</span>
+<span class="md-text">build great products faster.</span>
+
+<span class="md-h2">## ✨ Features</span>
+<span class="md-text">- ⚡ Lightning fast</span>
+<span class="md-text">- 🎨 Beautiful design</span>
+<span class="md-text">- 🔐 Secure by default</span>
+
+<span class="md-h2">## 📦 Installation</span>
+<span class="md-code">```bash
+npm install awesome
+```</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Everything you need, nothing you don't</h2>
+      <p class="section-sub">Designed for developers who care about how their projects are presented.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant Preview</h3>
+          <p>Watch your README take shape live as you type. No refresh, no waiting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Modular Sections</h3>
+          <p>Toggle features, installation, usage, contributing, and more with a click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏷️</div>
+          <h3>Smart Badges</h3>
+          <p>Auto-generate Shields.io badges for license, version, build status, and more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📥</div>
+          <h3>One-click Export</h3>
+          <p>Download your README.md or copy directly to clipboard, ready for GitHub.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌙</div>
+          <h3>Dark Mode</h3>
+          <p>Easy on the eyes. Toggle between light and dark themes anytime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>100% Private</h3>
+          <p>Everything runs in your browser. Your data never touches a server.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GENERATOR ============ -->
+  <section class="generator" id="generator">
+    <div class="container">
+      <h2 class="section-title">The Generator</h2>
+      <p class="section-sub">Fill in your project details and watch the magic happen.</p>
+
+      <div class="generator-wrap">
+        <!-- LEFT FORM -->
+        <div class="form-panel">
+          <div class="form-tabs">
+            <button class="tab active" data-tab="basics">📝 Basics</button>
+            <button class="tab" data-tab="sections">🧩 Sections</button>
+            <button class="tab" data-tab="badges">🏷️ Badges</button>
+          </div>
+
+          <!-- Basics tab -->
+          <div class="tab-content active" data-content="basics">
+            <label>
+              <span>Project Title *</span>
+              <input type="text" id="projectTitle" placeholder="e.g. My Awesome Project" value="My Awesome Project" />
+            </label>
+            <label>
+              <span>Short Description</span>
+              <textarea id="projectDesc" rows="3" placeholder="One or two sentences about what your project does.">A blazing-fast, developer-friendly tool that makes building great software easier than ever.</textarea>
+            </label>
+            <div class="row">
+              <label>
+                <span>Author Name</span>
+                <input type="text" id="author" placeholder="Jane Doe" value="Jane Doe" />
+              </label>
+              <label>
+                <span>GitHub Username</span>
+                <input type="text" id="github" placeholder="janedoe" value="janedoe" />
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <span>Repository Name</span>
+                <input type="text" id="repo" placeholder="my-awesome-project" value="my-awesome-project" />
+              </label>
+              <label>
+                <span>License</span>
+                <select id="license">
+                  <option value="MIT">MIT</option>
+                  <option value="Apache 2.0">Apache 2.0</option>
+                  <option value="GPL-3.0">GPL-3.0</option>
+                  <option value="BSD-3-Clause">BSD-3-Clause</option>
+                  <option value="ISC">ISC</option>
+                  <option value="Unlicense">Unlicense</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>Installation Command</span>
+              <input type="text" id="install" placeholder="npm install my-package" value="npm install my-awesome-project" />
+            </label>
+            <label>
+              <span>Usage Example (code)</span>
+              <textarea id="usage" rows="4" placeholder="Code snippet showing how to use it">import awesome from 'my-awesome-project';
+
+awesome.run();</textarea>
+            </label>
+          </div>
+
+          <!-- Sections tab -->
+          <div class="tab-content" data-content="sections">
+            <p class="hint">Pick which sections to include in your README.</p>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="features" checked /> ✨ Features</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="installation" checked /> 📦 Installation</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="usage" checked /> 🚀 Usage</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="screenshots" /> 📸 Screenshots</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="api" /> 📚 API Reference</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="contributing" checked /> 🤝 Contributing</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="tests" /> 🧪 Running Tests</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="roadmap" /> 🗺️ Roadmap</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="acknowledgments" /> 🙏 Acknowledgments</label>
+            <label class="check"><input type="checkbox" class="section-toggle" data-section="license" checked /> 📄 License</label>
+
+            <label style="margin-top:1rem;">
+              <span>Features (one per line)</span>
+              <textarea id="features-list" rows="4">⚡ Lightning fast performance
+🎨 Beautiful, modern UI
+🔐 Secure by default
+📱 Fully responsive</textarea>
+            </label>
+          </div>
+          <div class="tab-content" data-content="badges">
+            <p class="hint">Toggle badges that will appear at the top of your README.</p>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="license" checked /> 📄 License Badge</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="version" checked /> 🏷️ Version Badge</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="stars" checked /> ⭐ GitHub Stars</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="forks" /> 🍴 GitHub Forks</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="issues" /> 🐛 Open Issues</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="prs" /> 🔄 Pull Requests Welcome</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="build" /> ✅ Build Passing</label>
+            <label class="check"><input type="checkbox" class="badge-toggle" data-badge="contributors" /> 👥 Contributors</label>
+
+            <label style="margin-top:1rem;">
+              <span>Project Version</span>
+              <input type="text" id="version" value="1.0.0" />
+            </label>
+          </div>
+        </div>
+
+        <!-- RIGHT PREVIEW -->
+        <div class="preview-panel">
+          <div class="preview-header">
+            <div class="preview-tabs">
+              <button class="preview-tab active" data-view="rendered">👁️ Preview</button>
+              <button class="preview-tab" data-view="raw">📝 Markdown</button>
+            </div>
+            <div class="preview-actions">
+              <button id="copyBtn" class="btn btn-ghost btn-sm">📋 Copy</button>
+              <button id="downloadBtn" class="btn btn-primary btn-sm">⬇ Download</button>
+            </div>
+          </div>
+          <div class="preview-body">
+            <div class="preview-rendered active" id="rendered"></div>
+            <pre class="preview-raw" id="raw"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">How it works</h2>
+      <p class="section-sub">Three simple steps. That's it.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Fill the form</h3>
+          <p>Enter your project name, description, and other details into the form fields.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Customize sections</h3>
+          <p>Toggle the sections and badges you want. Watch the live preview update instantly.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Copy or download</h3>
+          <p>Grab your README.md and drop it straight into your GitHub repo. Done!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Is ReadmeForge really free?</summary>
+          <p>Yes — 100% free, no sign-up, no hidden fees. Everything runs in your browser.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?</summary>
+          <p>Nowhere. All processing happens client-side. Your project info never leaves your device.</p>
+        </details>
+        <details>
+          <summary>Can I customize the generated markdown?</summary>
+          <p>Absolutely. After generating, you can copy the markdown and edit it manually before committing.</p>
+        </details>
+        <details>
+          <summary>Do you support custom badges?</summary>
+          <p>The current version supports 8+ Shields.io badges. Custom badge support is on the roadmap.</p>
+        </details>
+        <details>
+          <summary>Will my settings be remembered?</summary>
+          <p>Yes — your form is saved in your browser's local storage so you can pick up where you left off.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to make your repo shine?</h2>
+      <p>Build a beautiful README in under a minute.</p>
+      <a href="#generator" class="btn btn-primary btn-lg">⚒ Start Forging</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">⚒</span>
+          <span>Readme<strong>Forge</strong></span>
+        </div>
+        <p>Beautiful READMEs, built in seconds.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Product</h4>
+          <a href="#generator">Generator</a>
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#faq">FAQ</a>
+          <a href="#">Markdown Guide</a>
+          <a href="#">Shields.io</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="#">GitHub</a>
+          <a href="#">Twitter</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 ReadmeForge. Crafted Vidheendu ❤.</span>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
