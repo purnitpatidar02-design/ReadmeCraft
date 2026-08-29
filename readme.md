@@ -121,21 +121,8 @@ MIT License — Free to use, modify, and distribute.
 
 ---
 
-## 👤 Author
-
-**Vidheendu**
  
 - 💼 GitHub: [@Vidheendu](https://github.com/yourusername)
 
 
 ---
-
-
-<p align="center">
-  <strong>If ReadmeCraft helped you, please consider giving it a ⭐!</strong>
-</p>
-
-<p align="center">
-  Made with ⚒ and ❤ by developers, for developers.
-  BY VIDHEENDU
-</p>
