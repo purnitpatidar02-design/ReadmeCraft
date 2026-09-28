@@ -120,13 +120,3 @@ MIT License — Free to use, modify, and distribute.
 ```
 
 ---
-
-## 👤 Author
- 
-- 💼 GitHub: [@Vidheendu](https://github.com/yourusername)
-
-
----
-
-  BY VIDHEENDU
-</p>
